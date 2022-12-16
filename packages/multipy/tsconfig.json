@@ -1,0 +1,5 @@
+{
+  "extends": "@rewind-ui/tsconfig/react",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
