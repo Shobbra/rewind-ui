@@ -1,0 +1,10 @@
+{
+  "extends": "@rewind-ui/tsconfig/react",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "isolatedModules": true,
+    "esModuleInterop": false
+  }
+}

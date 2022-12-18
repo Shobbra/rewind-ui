@@ -1,6 +1,6 @@
 {
-  "name": "@rewind-ui/button",
-  "version": "1.0.0",
+  "name": "@rewind-ui/core",
+  "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -10,8 +10,8 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.js --format esm,cjs",
+    "dev": "tsup src/index.js --format esm,cjs --watch",
     "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
@@ -22,8 +22,8 @@
     "react": "^18.1.0",
     "tsup": "^5.10.1",
     "typescript": "^4.5.3",
-    "@rewind-ui/tsconfig": "*",
-    "@rewind-ui/eslint": "*"
+    "@rewind-ui/eslint": "*",
+    "@rewind-ui/utils": "*"
   },
   "publishConfig": {
     "access": "public"
