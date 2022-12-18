@@ -1,3 +1,3 @@
 export function Button(props: any) {
-  return <button {...props} />;
+  return <button className='btn' {...props} />;
 }
